@@ -262,10 +262,10 @@ public class Frame1 extends javax.swing.JFrame {
     }//GEN-LAST:event_hitung1ActionPerformed
 
     private void volume1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_volume1ActionPerformed
-    double Jari;
+    float Jari;
         Jari = Integer.parseInt(jarijari.getText());
         
-        double hasil = Math.PI*Jari*Jari*Jari*3/4;
+        float hasil = (float) (4/3*Math.PI*Jari*Jari*Jari);
            try{
             JOptionPane.showMessageDialog(null, "Volume Bola adalah :"+hasil, "Volume", 
                     JOptionPane.INFORMATION_MESSAGE);
